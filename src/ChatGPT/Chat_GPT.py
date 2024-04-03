@@ -1,6 +1,4 @@
 import openai
-import readline  # Agregar esta línea para habilitar el historial de la consola
-import sys
 
 # Establece tu clave de API de OpenAI
 
@@ -70,9 +68,4 @@ def manejar_entrada_usuario():
 
 # Punto de entrada del programa
 if __name__ == "__main__":
-    # Verificar si se ha especificado el argumento '--convers'
-    if "--convers" in sys.argv:
-        manejar_entrada_usuario()
-    else:
-        # Indicar al usuario cómo iniciar una conversación si no se especifica el argumento '--convers'
-        print("El argumento '--convers' no ha sido especificado. Ejecute el programa con '--convers' para iniciar una conversación.")
+    manejar_entrada_usuario()
